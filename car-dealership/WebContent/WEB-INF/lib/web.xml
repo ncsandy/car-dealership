@@ -1,0 +1,7 @@
+<web-app>  
+  <servlet>  
+   <servlet-name>HomepageServlet</servlet-name>  
+   <servlet-class>com.servlets.HomepageServlet</servlet-class>  
+   <load-on-startup>0</load-on-startup>  
+  </servlet>  
+</web-app>  

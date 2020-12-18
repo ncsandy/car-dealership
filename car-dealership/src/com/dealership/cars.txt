@@ -1,0 +1,100 @@
+Honda
+Civic Type-R
+2019
+10/20/2020
+0
+90
+https://s.aolcdn.com/dims-global/dims3/GLOB/legacy_thumbnail/1049x590/quality/80/https://s.aolcdn.com/os/ab/_cms/2020/05/20160338/2020-Honda-Civic-Type-R-099.jpg
+MPG: Up to 22 city / 28 highway Horsepower: 382 horsepower Engine: 3.0 L 6-cylinder
+false
+$37,000
+Chevy
+Corvette C8
+2019
+11/20/2020
+4124
+40
+https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Chevrolet_Corvette_C8_Stingray_blue.jpg/2560px-Chevrolet_Corvette_C8_Stingray_blue.jpg
+MPG: Up to 15 city / 27 highway Horsepower: 490 horsepower Engine: 6.2L 8-cylinder
+true
+$70,000
+Ford
+Mustang GT
+2021
+03/2/2020
+0
+12
+https://fordauthority.com/wp-content/uploads/2020/04/2020-Ford-Mustang-GT-5.0-Fastback-Coupe-Exterior-001-front-three-quarters.jpg
+MPG: Up to 16 city / 25 highway Horsepower: 460 horsepower Engine: 5.0 L 8-cylinder
+false
+$36,000
+Nissan
+Versa
+2017
+01/01/2019
+72412
+133
+https://s.aolcdn.com/commerce/autodata/images/USC50NIC101C021001.jpg
+MPG: Up to 31 city / 39 highway Horsepower: 109 horsepower 1.6L 4-cylinder
+true
+$7,999
+Toyota
+Camry
+2015
+03/15/2020
+101321
+180
+https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/14q3/612022/2015-toyota-camry-first-drive-review-car-and-driver-photo-628681-s-original.jpg
+MPG: Up to 25 city / 35 highway 178 horsepower 2.5 L Engine: 4-cylinder
+true
+$6950
+Kia
+Soul
+2014
+07/24/2020
+130532
+210
+https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRdMIdP_NkMndD8EDcLExPFuDbhz9p8n1MAzzcShicPE1GXML2
+MPG: Up to 24 city / 30 highway 130 horsepower Engine: 1.6 L 4-cylinder
+true
+$7499
+Toyota
+Supra
+2020
+08/24/2020
+2
+60
+https://cdn.motor1.com/images/mgl/BzY8A/s1/2020-toyota-supra-first-drive.jpg
+MPG: 24 city / 31 highway Horsepower: 335 horsepower Engine: 3.0 6-cylinder
+false
+$49,990
+Dodge
+Charger R/T
+2018
+9/2/2020
+115
+33605
+https://s.aolcdn.com/commerce/autodata/images/USC60DOC201E021001.jpg
+MPG: 16 city / 25 highway Horsepower: 370 horsepower Engine: 5.7 8-cylinder
+true
+$23,995
+Ford
+F-150
+2016
+11/4/2020
+103
+50421
+https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/16q2/667349/2016-ford-f-150-lariat-supercrew-50l-4x4-test-review-car-and-driver-photo-667924-s-original.jpg
+MPG: Up to 19 city / 26 highway Horsepower:385 horsepower Engine 5.0 L 8-cylinder
+true
+$17,995
+Ford
+F-150 Raptor
+2020
+11/20/2020
+60
+5
+https://blogmedia.dealerfire.com/wp-content/uploads/sites/1027/2020/02/2020-Ford-Raptor-Magnetic-Grey_o.jpg
+MPG: 15 city / 18 highway Horsepower: 450 horsepower Engine: 3.5 L 6-cylinder
+false
+$53,455
