@@ -63,7 +63,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
        <c:if test="${inventory != null }">
        <c:forEach var="car" items="${inventory.carList}">
-       	<c:if test="${car.residence > 120 }">
+       	<c:if test="${car.residence > 120 && car.purchased == false}">
 		<div class="col">
          <div class="card" style="width: 18rem;">
   			<img src=${car.image} class="card-img-top" alt="..." >
@@ -73,7 +73,7 @@
  					${car.description}
  				 </div>
               <div class="d-flex justify-content-center align-items-center">
-                
+                <button type="sumbit" class="btn btn-success">Purchase</button>
                <div class="dropdown">
   					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
   					 Details
@@ -83,7 +83,7 @@
    		 <a class="dropdown-item" href="#">Model: ${car.model}</a>
     <a class="dropdown-item" href="#">Year: ${car.year}</a>
  	 <a class="dropdown-item" href="#">Mileage: ${car.mileage}</a>
- 	 <a class="dropdown-item" href="#">Price: ${car.price}</a>
+ 	 <a class="dropdown-item" href="#">Price: ${inventory.discount(car.price)}</a>
   </div>
 </div>           
 </div>

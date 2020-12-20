@@ -6,19 +6,58 @@ public class Car {
     private String year;  //2
     private String dateOfPurchase; //3
     private int mileage; //4  //parse
-    private int residence; //5 //parse
+   
+    public Car(String make, String model, String year, String dateOfPurchase, int mileage, int residence, String image,
+			String description, boolean used, int price, boolean purchased, String vin) {
+		super();
+		this.make = make;
+		this.model = model;
+		this.year = year;
+		this.dateOfPurchase = dateOfPurchase;
+		this.mileage = mileage;
+		this.residence = residence;
+		this.image = image;
+		this.description = description;
+		this.used = used;
+		this.price = price;
+		this.purchased = purchased;
+		this.vin = vin;
+	}
+
+	public String getVin() {
+		return vin;
+	}
+
+	public void setVin(String vin) {
+		this.vin = vin;
+	}
+
+
+
+
+	private int residence; //5 //parse
     private String image; //6
     private String description; //7
     private	boolean used; //8 //parse
-    private String price; //9
+    private int price; //9
+    private boolean purchased; //10
+    private String vin; //11
 
 
 
-    public String getPrice() {
+    public boolean isPurchased() {
+		return purchased;
+	}
+
+	public void setPurchased(boolean purchased) {
+		this.purchased = purchased;
+	}
+
+	public int getPrice() {
 		return price;
 	}
 
-	public void setPrice(String price) {
+	public void setPrice(int price) {
 		this.price = price;
 	}
 
@@ -99,36 +138,21 @@ public class Car {
     }
  
     
-  
-
-	public Car(String make, String model, String year, String dateOfPurchase, int mileage, int residence,
-			String image, String description, boolean used, String price) {
-		super();
-		this.make = make;
-		this.model = model;
-		this.year = year;
-		this.dateOfPurchase = dateOfPurchase;
-		this.mileage = mileage;
-		this.residence = residence;
-		this.image = image;
-		this.description = description;
-		this.used = used;
-		this.price = price;
-	}
 
 	public Car() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-	
-	
+
 	@Override
 	public String toString() {
-		return 	make + ", model=" + model + ", year=" + year + ", dateOfPurchase=" + dateOfPurchase
-				+ ", mileage=" + mileage + ", residence=" + residence + ", image=" + image + ", description="
-				+ description + ", used=" + used + ", price=" + price;
+		return  make + "\n" + model + "\n" + year + "\n" + dateOfPurchase
+				+ "\n" + mileage + "\n" + residence + "\n" + image + "\n"
+				+ description + "\n" + used + "\n" + price + "\n" + purchased + "\n" + vin;
 	}
+	
+	
+	
+	
 
 
 }

@@ -19,6 +19,10 @@ import com.dealership.Inventory;
  */
 @WebServlet("/UsedCarsServlet")
 public class UsedCarsServlet extends HttpServlet {
+	
+	
+	
+	
 	private static final long serialVersionUID = 1L;
        
     /**
@@ -45,7 +49,6 @@ public class UsedCarsServlet extends HttpServlet {
 		if(inventory == null) {
 			inventory = new Inventory(); 
 		}
-		
 		
 		
 		session.setAttribute("inventory", inventory);

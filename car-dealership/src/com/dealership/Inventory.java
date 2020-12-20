@@ -18,6 +18,26 @@ public class Inventory {
 	public void setCar(ArrayList<Car> carList) {
 		this.carList = carList;
 	}
+	public int discount(int price) {
+		double newPrice =  (price) - (price * .10);
+		price = (int)newPrice;
+		return price;
+	}
+	public ArrayList<Car> test(Car car) {
+		
+		car.setPurchased(true);
+		ArrayList<Car> update = new ArrayList<Car>();
+				
+		for(Car cars: carList) {
+			if(cars.isPurchased() != true) {
+				update.add(cars);
+			}
+		}
+		
+		return update;
+	}
+	
+	
 
 
 	
@@ -27,11 +47,12 @@ public class Inventory {
         String line;
 
         ArrayList<Car> carlot = new ArrayList<Car>();
+
         try {
-            fopen = new FileReader("/Users/nicholassandy/eclipse-workspace/car-dealership/build/classes/com/dealership/cars.txt");
+            fopen = new FileReader("/Users/nicholassandy/git/car-dealership/car-dealership/src/com/dealership/cars.txt");
             opened = new BufferedReader(fopen);
 
-            int parameters = 10; // we have 8 fields in the Car class
+            int parameters = 12; // we have 8 fields in the Car class
             String[] fields = new String[parameters]; // to temporary store fields values read line by line
             int lineCounter = 0;
             while ((line = opened.readLine()) != null) {
@@ -41,9 +62,12 @@ public class Inventory {
                     int mileage = Integer.parseInt(fields[4]);
                     int residence = Integer.parseInt(fields[5]);
                     boolean used = Boolean.parseBoolean(fields[8]);
+                    int price = Integer.parseInt(fields[9]);
+                	boolean purchased =Boolean.parseBoolean(fields[10]);
                 	
-                	carlot.add(new Car(fields[0],fields[1],fields[2],fields[3],mileage,residence,fields[6],fields[7],used,fields[9])); //therefore we create a new car and we add it to the list of cars
-                    lineCounter = 0;
+                	carlot.add(new Car(fields[0],fields[1],fields[2],fields[3],mileage,residence,fields[6],fields[7],used,price,purchased,fields[11])); //therefore we create a new car and we add it to the list of cars
+                   
+                	lineCounter = 0;
                 	
                 	}
 
@@ -55,15 +79,12 @@ public class Inventory {
             e.printStackTrace();
         }
         
-    }
-
-	public void discount(String price){
-		price = price.replaceAll("[^0-9]", "");
-		int newPrice = Integer.parseInt(price);
-		double discountPrice = (newPrice - (newPrice * .10));
-		newPrice = (int)discountPrice;
-	}
+        
 	
+	
+	
+	}
+
 
 
 }

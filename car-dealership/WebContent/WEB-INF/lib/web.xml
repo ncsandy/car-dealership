@@ -4,4 +4,7 @@
    <servlet-class>com.servlets.HomepageServlet</servlet-class>  
    <load-on-startup>0</load-on-startup>  
   </servlet>  
+<listener>
+    <listener-class>com.servlets.MySessionAttributeListener.java</listener-class>
+</listener>
 </web-app>  

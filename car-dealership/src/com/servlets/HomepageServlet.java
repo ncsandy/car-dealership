@@ -38,7 +38,7 @@ public class HomepageServlet extends HttpServlet {
 		
 		
 		HttpSession session = request.getSession(true);
-//		Car car = (Car)session.getAttribute("car");
+
 		
 		Inventory inventory = (Inventory)session.getAttribute("inventory");
 		if(inventory == null) {
