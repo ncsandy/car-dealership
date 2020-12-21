@@ -58,7 +58,7 @@
 							INVENTORY</a></li>
 					<li class="nav-item"><a class="nav-link" href="specials.jsp">SPECIALS</a>
 					</li>
-					<li class="nav-item"><a class="nav-link" href="#">ABOUT US</a>
+					<li class="nav-item"><a class="nav-link" href="dealerlogin.jsp">Dealer Log in</a>
 					</li>
 				</ul>
 				<form class="d-flex" action="SearchCarsServlet" method="post">

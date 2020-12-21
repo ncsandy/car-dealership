@@ -3,8 +3,13 @@ package com.dealership;
 
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 
 public class Inventory {
@@ -23,23 +28,7 @@ public class Inventory {
 		price = (int)newPrice;
 		return price;
 	}
-	public ArrayList<Car> test(Car car) {
-		
-		car.setPurchased(true);
-		ArrayList<Car> update = new ArrayList<Car>();
-				
-		for(Car cars: carList) {
-			if(cars.isPurchased() != true) {
-				update.add(cars);
-			}
-		}
-		
-		return update;
-	}
 	
-	
-
-
 	
 	public Inventory() {
         FileReader fopen;

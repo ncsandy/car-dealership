@@ -48,7 +48,7 @@
                     <a class="nav-link" href="specials.jsp">SPECIALS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">ABOUT US</a>
+                    <a class="nav-link" href="#">Dealer Log In</a>
                 </li>
             </ul>
              <form class="d-flex">

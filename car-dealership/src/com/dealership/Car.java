@@ -6,6 +6,13 @@ public class Car {
     private String year;  //2
     private String dateOfPurchase; //3
     private int mileage; //4  //parse
+	private int residence; //5 //parse
+    private String image; //6
+    private String description; //7
+    private	boolean used; //8 //parse
+    private int price; //9
+    private boolean purchased; //10
+    private String vin; //11
    
     public Car(String make, String model, String year, String dateOfPurchase, int mileage, int residence, String image,
 			String description, boolean used, int price, boolean purchased, String vin) {
@@ -31,19 +38,6 @@ public class Car {
 	public void setVin(String vin) {
 		this.vin = vin;
 	}
-
-
-
-
-	private int residence; //5 //parse
-    private String image; //6
-    private String description; //7
-    private	boolean used; //8 //parse
-    private int price; //9
-    private boolean purchased; //10
-    private String vin; //11
-
-
 
     public boolean isPurchased() {
 		return purchased;
@@ -145,7 +139,7 @@ public class Car {
 
 	@Override
 	public String toString() {
-		return  make + "\n" + model + "\n" + year + "\n" + dateOfPurchase
+		return  "\n" + make + "\n" + model + "\n" + year + "\n" + dateOfPurchase
 				+ "\n" + mileage + "\n" + residence + "\n" + image + "\n"
 				+ description + "\n" + used + "\n" + price + "\n" + purchased + "\n" + vin;
 	}
