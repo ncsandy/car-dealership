@@ -80,9 +80,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" action="AddCarServlet">
               <span data-feather="file"></span>
-              Orders
+              Add Car
             </a>
           </li>
           <li class="nav-item">
