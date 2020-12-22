@@ -130,15 +130,20 @@
               <th>Customer Name</th>
               <th>Purchase date</th>
               <th>Car </th>
+              <th>Bought Price</th>
+              <th>Photo</th>
+              
             </tr>
           </thead>
           <tbody>
             <c:forEach var="customer" items="${inventory.customerList}"> 
             <tr>
-              <td><c:out value="${customer.firstName}  "/></td>
-              <td><c:out value="${customer.date}"/></td>
-              <td><c:out value="${customer.car}"/></td>
-            </tr>
+              <td>${customer.firstName}  ${customer.lastName }</td>
+              <td>${customer.date}</td>
+              <td>${customer.car.make} ${customer.car.model} ${customer.car.year}</td>
+           	  <td>$${customer.car.price} </td>
+           	  <td><img class=shrink src=${customer.car.image} width="170" height="100"/></td>	
+           	 </tr>
             </c:forEach>
           </tbody>
         </table>
@@ -146,7 +151,6 @@
     </main>
   </div>
 </div>
-
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>

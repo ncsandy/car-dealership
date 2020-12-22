@@ -48,7 +48,7 @@
                     <a class="nav-link" href="specials.jsp">SPECIALS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Dealer Log In</a>
+                    <a class="nav-link" href="dealerlogin.jsp">Dealer Log In</a>
                 </li>
             </ul>
              <form class="d-flex">
@@ -73,7 +73,10 @@
  					${car.description}
  				 </div>
               <div class="d-flex justify-content-center align-items-center">
-                <button type="sumbit" class="btn btn-success">Purchase</button>
+               <form action="PurchaseServlet" method="POST">
+				<input type="hidden" name="vin" value="${car.vin}" > 
+				<button type="submit" name="purchase" class="btn btn-success">Purchase</button>
+				</form>	
                <div class="dropdown">
   					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
   					 Details

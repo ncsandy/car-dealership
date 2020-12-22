@@ -13,6 +13,7 @@ import javax.servlet.http.HttpSession;
 
 import com.dealership.Car;
 import com.dealership.Customer;
+import com.dealership.DateSorter;
 import com.dealership.FileWriters;
 import com.dealership.Inventory;
 
@@ -58,9 +59,9 @@ public class CustomerServlet extends HttpServlet {
 		
 		inventory.addCustomer(customer);
 		
-		
+		inventory.getCustomerList().sort(new DateSorter());
 		filewriter.carWriter(car,inventory);
-		
+		filewriter.customerWriter(inventory.getCustomerList());
 		
 		session.setAttribute("inventory", inventory);
 		

@@ -2,7 +2,7 @@ package com.dealership;
 
 
 
-public class Customer {
+public class Customer implements Comparable<Customer>  {
 
 	private String firstName;
 	private String lastName;
@@ -48,7 +48,16 @@ public class Customer {
 	public void setCar(Car car) {
 		this.car = car;
 	}
+
+
+	@Override
+	public String toString() {
+		return firstName + "\n" + lastName + "\n" + date + "\n" + car + "\n";
+	}
+		
+	@Override
+	public int compareTo(Customer o) {
+		return getDate().compareTo(o.getDate());
+	}
 	
-
-
 }

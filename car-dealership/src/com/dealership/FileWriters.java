@@ -18,14 +18,15 @@ public class FileWriters {
 		
 		car.setPurchased(true);
 		ArrayList<Car> update = new ArrayList<Car>();
-				
+		
+		
 		for(Car cars: inventory.getCarList()) {
 			if(cars.isPurchased() == false) {
 				update.add(cars);
 			}
 		}
 		
-		
+		//formatting the strings
 		String formattedString = update.toString()
 			    .replace(",", "")  //remove the commas
 			    .replace("[", "")  //remove the right bracket
@@ -33,7 +34,7 @@ public class FileWriters {
 			    .trim();  //remove extra whitespace
 			     
 		
-		
+		//deleting all contents in file
 		BufferedWriter writer;
 		try {
 			writer = Files.newBufferedWriter(Paths.get("/Users/nicholassandy/git/car-dealership/car-dealership/src/com/dealership//cars.txt"));
@@ -45,7 +46,7 @@ public class FileWriters {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		//writing new contents in file
 		try {
 		 PrintWriter pw = new PrintWriter(new FileOutputStream("/Users/nicholassandy/git/car-dealership/car-dealership/src/com/dealership//cars.txt"));
 		   
@@ -59,6 +60,44 @@ public class FileWriters {
 		
 		
 	}
+
+	public void customerWriter(ArrayList<Customer> customerlist) {
+		
+		//formatting string
+		
+		customerlist.sort(new DateSorter());
+		String temp;
+		String formattedString = customerlist.toString()
+			    .replace(",", "")  //remove the commas
+			    .replace("[", "")  //remove the right bracket
+			    .replace("]", "")  //remove the left bracket
+			    .replaceAll("\\u00A0", "")
+			    .trim()  //remove extra whitespace
+			    .replace("\n\n", "\n");
+		temp = formattedString;
+		temp.trim();
+		formattedString=temp;
+		
+		
+			     
+	
+		try {
+			 PrintWriter pw = new PrintWriter(new FileOutputStream("/Users/nicholassandy/git/car-dealership/car-dealership/src/com/dealership//purchaselog.txt"));
+			   
+			    pw.println(formattedString);
+			    pw.close();
+			}
+			catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	
+	
+	
+	}
+
+
+
 
 
 }
