@@ -83,7 +83,7 @@
    		 <a class="dropdown-item" href="#">Model: ${car.model}</a>
     <a class="dropdown-item" href="#">Year: ${car.year}</a>
  	 <a class="dropdown-item" href="#">Mileage: ${car.mileage}</a>
- 	 <a class="dropdown-item" href="#">Price: ${inventory.discount(car.price)}</a>
+ 	 <a class="dropdown-item" href="#">Price: $${inventory.discount(car.price)}</a>
   </div>
 </div>           
 </div>

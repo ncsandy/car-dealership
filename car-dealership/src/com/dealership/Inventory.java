@@ -20,14 +20,34 @@ public class Inventory {
 		return carList;
 	}
 
-	public void setCar(ArrayList<Car> carList) {
-		this.carList = carList;
+	
+	private ArrayList<Customer> customerList = new ArrayList<Customer>();
+	
+	public ArrayList<Customer> getCustomerList() {
+		return customerList;
 	}
+	
+	
 	public int discount(int price) {
 		double newPrice =  (price) - (price * .10);
 		price = (int)newPrice;
 		return price;
 	}
+	
+
+	
+	public void addCustomer(Customer customer) {
+		customerList.add(customer);
+		
+		
+	}
+	
+	
+	
+	public void setCar(ArrayList<Car> carList) {
+		this.carList = carList;
+	}
+	
 	
 	
 	public Inventory() {
@@ -35,7 +55,6 @@ public class Inventory {
         BufferedReader opened;
         String line;
 
-        ArrayList<Car> carlot = new ArrayList<Car>();
 
         try {
             fopen = new FileReader("/Users/nicholassandy/git/car-dealership/car-dealership/src/com/dealership/cars.txt");
@@ -54,14 +73,14 @@ public class Inventory {
                     int price = Integer.parseInt(fields[9]);
                 	boolean purchased =Boolean.parseBoolean(fields[10]);
                 	
-                	carlot.add(new Car(fields[0],fields[1],fields[2],fields[3],mileage,residence,fields[6],fields[7],used,price,purchased,fields[11])); //therefore we create a new car and we add it to the list of cars
+                	carList.add(new Car(fields[0],fields[1],fields[2],fields[3],mileage,residence,fields[6],fields[7],used,price,purchased,fields[11])); //therefore we create a new car and we add it to the list of cars
                    
                 	lineCounter = 0;
                 	
                 	}
 
             }
-            carList = carlot;
+           
             
             opened.close();
         } catch (IOException e) {
@@ -74,6 +93,9 @@ public class Inventory {
 	
 	}
 
-
-
+	
+	
+	
+	
+	
 }

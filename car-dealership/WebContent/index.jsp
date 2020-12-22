@@ -84,7 +84,7 @@
 								
 								<img src=${car.image } class="card-img-top" alt="...">
 								<div class="card-body">
-									<p><span class="mandatory">${car.make}${car.model}</span></p>
+									<p><span class="mandatory">${car.make}   ${car.model}</span></p>
 									<p class="card-text">${car.description}
 								</div>
 								

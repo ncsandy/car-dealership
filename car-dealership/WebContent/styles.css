@@ -1,5 +1,6 @@
 .mandatory{
 	font-family: 'Cinzel', serif;
+	text-align:auto;
 }
 body{
 	background-color: #eff8ff;
@@ -8,4 +9,7 @@ body{
 	
 	margin:auto!important;;
 
+}
+.barcolor{
+	color: #c6ebc9;
 }
