@@ -25,14 +25,14 @@ public class Inventory {
 	}
 	
 	
-	public int discount(int price) {
+	public int discount(int price) {                  //this method is to apply discount to 120+ residence cars
 		double newPrice =  (price) - (price * .10);
 		price = (int)newPrice;
 		return price;
 	}
 	
 	
-	public void special(ArrayList<Car> cars) {
+	public void special(ArrayList<Car> cars) {    //this is to update the array and apply the discounts
 		for(Car car: cars) {
 			if(car.getResidence() > 120) {
 				car.setPrice(discount(car.getPrice()));
@@ -123,13 +123,13 @@ public void loadPurchase() {
          fopen = new FileReader("/Users/nicholassandy/git/car-dealership/car-dealership/src/com/dealership/purchaselog.txt");
          opened = new BufferedReader(fopen);
 	
-         int parameters = 15; // we have 8 fields in the Car class
+         int parameters = 15; // we have 15 fields customer class
          String[] fields = new String[parameters]; // to temporary store fields values read line by line
          int lineCounter = 0;
          while ((line = opened.readLine()) != null) {
              fields[lineCounter] = line;
              lineCounter++;
-             if ((lineCounter) % parameters == 0) { //it means we have all 8 fields values for a car
+             if ((lineCounter) % parameters == 0) { //it means we have all 15 fields values for a customer
                 int mileage = Integer.parseInt(fields[7]);
                 int residence = Integer.parseInt(fields[8]);
                 boolean used = Boolean.parseBoolean(fields[11]);
@@ -146,7 +146,7 @@ public void loadPurchase() {
          }
         
        
-        customerList.sort(new DateSorter());
+        customerList.sort(new DateSorter()); //we sort the customers by date of purchase here..
          opened.close();
      } catch (IOException e) {
          e.printStackTrace();

@@ -43,7 +43,7 @@
        
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.jsp"> INVENTORY <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.jsp">NEW INVENTORY <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="usedcars.jsp">USED INVENTORY</a>
@@ -55,10 +55,10 @@
                     <a class="nav-link" href="#">Dealer Log In</a>
                 </li>
             </ul>
-             <form class="d-flex" action="SearchCarsServlet" method="post">
-      <input class="form-control me-2" type="search" name="searchInput" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+        	<form action="PurchaseServlet" method="POST">
+									<input type="hidden" name="vin" value="${car.vin}" > 
+									<button type="submit" name="purchase" class="btn btn-success">Purchase</button>
+									</form>	
         </div>
     </nav>
 </div>
@@ -74,11 +74,16 @@
    				 <span class="mandatory"><p>${car.make}  ${car.model} </p></span>
    				 <p class="card-text">   				 
  					${car.description}
- 				 </div>
-              <div class="d-flex justify-content-center align-items-center">
-                <button type="sumbit" class="btn btn-success">Purchase</button>
-               <div class="dropdown">
-  					<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+ 				  </div>
+              		<div class="d-flex justify-content-center align-items-center">
+                     <form action="PurchaseServlet" method="POST">
+									<input type="hidden" name="vin" value="${car.vin}" > 
+									<button type="submit" name="purchase" class="btn btn-success">Purchase</button>
+									</form>	
+              </div>
+              
+               <div class="dropdown class flex ">
+  					<a class="btn btn-secondary dropdown-toggle d-flex justify-content-center align-items-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
   					 Details
   						</a>
  						 <div class="dropdown-menu details-button" aria-labelledby="dropdownMenuLink" >
@@ -96,7 +101,7 @@
           	</c:forEach>
           </div>
         </div>
-       </div>
+       
     	
       
     

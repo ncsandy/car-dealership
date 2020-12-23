@@ -9,7 +9,7 @@ MPG: Up to 22 city / 28 highway Horsepower: 382 horsepower Engine: 3.0 L 6-cylin
 false
 37000
 false
-YV1RS58D432245554    
+YV1RS58D432245554     
 Chevy
 Corvette C8
 2019
@@ -21,7 +21,7 @@ MPG: Up to 15 city / 27 highway Horsepower: 490 horsepower Engine: 6.2L 8-cylind
 true
 70000
 false
-2C4FJ25BXYR761326    
+2C4FJ25BXYR761326     
 Ford
 Mustang GT
 2021
@@ -33,7 +33,7 @@ MPG: Up to 16 city / 25 highway Horsepower: 460 horsepower Engine: 5.0 L 8-cylin
 false
 36000
 false
-2C4RDGDG4DR548770    
+2C4RDGDG4DR548770     
 Nissan
 Versa
 2017
@@ -43,9 +43,9 @@ Versa
 https://s.aolcdn.com/commerce/autodata/images/USC50NIC101C021001.jpg
 MPG: Up to 31 city / 39 highway Horsepower: 109 horsepower 1.6L 4-cylinder
 true
-7999
+6479
 false
-KNAFU6A27D5621520    
+KNAFU6A27D5621520     
 Toyota
 Camry
 2015
@@ -55,9 +55,9 @@ Camry
 https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/14q3/612022/2015-toyota-camry-first-drive-review-car-and-driver-photo-628681-s-original.jpg
 MPG: Up to 25 city / 35 highway 178 horsepower 2.5 L Engine: 4-cylinder
 true
-6950
+5629
 false
-1B3ES56C54D602150    
+1B3ES56C54D602150     
 Kia
 Soul
 2014
@@ -67,9 +67,9 @@ Soul
 https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTRdMIdP_NkMndD8EDcLExPFuDbhz9p8n1MAzzcShicPE1GXML2
 MPG: Up to 24 city / 30 highway 130 horsepower Engine: 1.6 L 4-cylinder
 true
-7499
+6074
 false
-2LMDJ8JK6CBL63130    
+2LMDJ8JK6CBL63130     
 Toyota
 Supra
 2020
@@ -81,7 +81,7 @@ MPG: 24 city / 31 highway Horsepower: 335 horsepower Engine: 3.0 6-cylinder
 false
 49990
 false
-2B3KA53H66H201900    
+2B3KA53H66H201900     
 Dodge
 Charger R/T
 2018
@@ -91,9 +91,9 @@ Charger R/T
 https://s.aolcdn.com/commerce/autodata/images/USC60DOC201E021001.jpg
 MPG: 16 city / 25 highway Horsepower: 370 horsepower Engine: 5.7 8-cylinder
 true
-23995
+19435
 false
-KMHDH4AE8BU138338    
+KMHDH4AE8BU138338     
 Ford
 F-150
 2016
@@ -103,9 +103,9 @@ F-150
 https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/16q2/667349/2016-ford-f-150-lariat-supercrew-50l-4x4-test-review-car-and-driver-photo-667924-s-original.jpg
 MPG: Up to 19 city / 26 highway Horsepower:385 horsepower Engine 5.0 L 8-cylinder
 true
-17995
+14575
 false
-1HD4CAM13PY298247    
+1HD4CAM13PY298247     
 Ford
 F-150 Raptor
 2020
@@ -117,4 +117,4 @@ MPG: 15 city / 18 highway Horsepower: 450 horsepower Engine: 3.5 L 6-cylinder
 false
 53455
 false
-2A4GP54L76R766375
+2A4GP54L76R766375 

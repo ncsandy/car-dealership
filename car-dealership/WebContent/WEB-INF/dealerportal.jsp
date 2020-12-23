@@ -48,13 +48,16 @@
       .barcolor{
 	color: #c6ebc9!important;
 	}
+	p{
+	text-alright:center;
+	}
     </style>
 
     
     <!-- Custom styles for this template -->
     
   </head>
-  <body>
+  <body class="text-center">
     
  <header class="navbar navbar-dark sticky-top bg-success flex-md-nowrap p-0 shadow barcolor"> 
   <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 " href="#">Nick's Tropical Auto Center</a>
@@ -79,12 +82,6 @@
               Dashboard
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" action="AddCarServlet">
-              <span data-feather="file"></span>
-              Add Car
-            </a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -98,7 +95,7 @@
         </div>
       </div>
 
-      <h2>Purchase History</h2>
+      <h2 class="text-success">Purchase History</h2>
       <div class="table-responsive">
         <table class="table table-striped table-sm">
           <thead>
@@ -127,6 +124,111 @@
     </main>
   </div>
 </div>
+<div class="card text-center">
+  <div class="card-header">
+    <h3 class="text-success">Add Vehicle</h3>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title text-danger">Input all information</h5>
+    
+    <form class="container was-validated" action="AddCarServlet" method="post">
+  <div class="mb-3">
+    <label for="validationTextarea" class="form-label">Make</label>
+   <input type="text" class="form-control" name="make" placeholder="Make" required="">
+    <div class="invalid-feedback">
+      Please enter vehicle make
+    </div>
+  </div>
+    <div class="mb-3">
+    <label for="validationTextarea" class="form-label">Model</label>
+   <input type="text" class="form-control" name="model" placeholder="Model" required="">
+    <div class="invalid-feedback">
+      Please enter vehicle model
+    </div>
+  </div>
+  	    <div class="mb-3">
+    <label for="validationTextarea" class="form-label">Year</label>
+   <input type="text" class="form-control" name="year" placeholder="Year" required="">
+    <div class="invalid-feedback">
+      Please enter vehicle year
+    </div>
+  </div>
+       <div class="mb-3">
+    <label for="validationTextarea" class="form-label">Date of Purchase</label>
+   <input type="date" class="form-control" name="dateOfPurchase" placeholder="Date of Purchase" required="">
+    <div class="invalid-feedback">
+      Please date of purchase
+    </div>
+  </div>
+     <div class="mb-3">
+    <label for="validationTextarea" class="form-label">Mileage</label>
+   <input type="text" class="form-control" name="mileage" placeholder="Mileage" required="">
+    <div class="invalid-feedback">
+      Please enter vehicle mileage
+    </div>
+  </div>
+         <div class="mb-3">
+    <label for="validationTextarea" class="form-label">Reisdence</label>
+   <input type="text" class="form-control" name="residence" placeholder="Residence" required="">
+    <div class="invalid-feedback">
+      Please enter residence of vehicle
+    </div>
+  </div>
+        <div class="mb-3">
+    <label for="validationTextarea" class="form-label">Image (enter url)</label>
+   <input type="text" class="form-control" name="image" placeholder="Image URL" required="">
+    <div class="invalid-feedback">
+      Please enter image url of vehicle
+    </div>
+  </div>
+     <div class="mb-3">
+    <label for="validationTextarea" class="form-label">Description</label>
+   <input type="text" class="form-control" name="description" placeholder="Description" required="">
+    <div class="invalid-feedback">
+      Please enter description of vehicle
+    </div>
+  </div>
+
+       <div class="mb-3">
+    <label for="validationTextarea" class="form-label">Price (Enter numeric value, no $ or commas)</label>
+   <input type="text" class="form-control" name="price" placeholder="Price" required="">
+    <div class="invalid-feedback">
+      Please enter description of vehicle
+    </div>
+  </div>
+  <input type="hidden" name="purchased" value="false" > 
+         <div class="mb-3">
+    <label for="validationTextarea" class="form-label">VIN</label>
+   <input type="text" class="form-control" name="vin" placeholder="Vin" required="">
+    <div class="invalid-feedback">
+      Please enter vehicle VIN
+    </div>
+  </div>
+ <div class="form-check">
+  <input class="form-check-input" type="radio" name="condition" value="false" checked>
+  <label class="form-check-label" for="exampleRadios1">
+   New
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="condition" value="true">
+  <label class="form-check-label" for="exampleRadios2">
+    Used
+  </label>
+</div>
+    <br>
+    <button type="submit" name="addCar" class="btn btn-success">Add car</button>
+  
+  </form>
+  </div>
+  </div>
+  <div class="card-footer text-muted">
+    Nick's Tropical Auto Center &copy 2020
+  </div>
+
+
+		
+		
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
 		crossorigin="anonymous"></script>

@@ -43,7 +43,7 @@
        
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.jsp"> INVENTORY <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.jsp">NEW INVENTORY <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="usedcars.jsp">USED INVENTORY</a>
@@ -67,7 +67,7 @@
     <label>Last name</label>
     <input type="text" class="form-control" name="lastName" placeholder="Enter last name">
   </div>
-  <div class="purchasecard">
+  <div class="justify-content-center align-items-center">
   <label>Today's Date</label>
 <input type="date"name="date">
 <br>

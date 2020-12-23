@@ -16,9 +16,10 @@ public class FileWriters {
 	
 	public void carWriter(Car car, Inventory inventory) {
 		
+		//setting the car to purchased 
 		car.setPurchased(true);
-		ArrayList<Car> update = new ArrayList<Car>();
 		
+		ArrayList<Car> update = new ArrayList<Car>(); 
 		
 		for(Car cars: inventory.getCarList()) {
 			if(cars.isPurchased() == false) {
@@ -96,7 +97,45 @@ public class FileWriters {
 	
 	}
 
-
+	public void addCar(Car car, Inventory inventory) {
+		
+		
+		ArrayList<Car> update = inventory.getCarList(); //we get current inventory session here..
+		
+		//formatting the strings
+		String formattedString = update.toString()
+			    .replace(",", "")  //remove the commas
+			    .replace("[", "")  //remove the right bracket
+			    .replace("]", "")  //remove the left bracket
+			    .trim();  //remove extra whitespace
+			     
+		
+		//deleting all contents in file
+		BufferedWriter writer;
+		try {
+			writer = Files.newBufferedWriter(Paths.get("/Users/nicholassandy/git/car-dealership/car-dealership/src/com/dealership//cars.txt"));
+			writer.write("");
+			writer.flush();
+			writer.close();
+		
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//writing new contents in file
+		try {
+		 PrintWriter pw = new PrintWriter(new FileOutputStream("/Users/nicholassandy/git/car-dealership/car-dealership/src/com/dealership//cars.txt"));
+		   
+		    pw.println(formattedString);
+		    pw.close();
+		}
+		catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	
+	}
 
 
 

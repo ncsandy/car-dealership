@@ -57,10 +57,10 @@ public class DealerServlet extends HttpServlet {
 		
 		session.getAttribute("customerList");
 		
-		String username=request.getParameter("username");
+		String username=request.getParameter("username"); //fetches input
 		String password=request.getParameter("password");
 		
-		if(username.equals("admin") && password.equals("123")) {
+		if(username.equals("admin") && password.equals("123")) {  //if it matches then we log in, yay :)
 			
 			RequestDispatcher rs = request.getRequestDispatcher("/WEB-INF/dealerportal.jsp");
 			rs.forward(request, response);

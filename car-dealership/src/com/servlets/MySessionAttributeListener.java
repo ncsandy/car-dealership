@@ -5,6 +5,10 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpSessionAttributeListener;
 import javax.servlet.http.HttpSessionBindingEvent;
 
+//This logger was super useful for seeing what happened in the background
+
+
+
 @WebListener
 public class MySessionAttributeListener implements HttpSessionAttributeListener {
 

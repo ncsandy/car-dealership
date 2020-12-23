@@ -52,7 +52,7 @@
 
 				<ul class="navbar-nav">
 					<li class="nav-item active"><a class="nav-link"
-						href="index.jsp"> INVENTORY <span class="sr-only">(current)</span></a>
+						href="index.jsp">NEW INVENTORY <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item"><a class="nav-link" href="usedcars.jsp">USED
 							INVENTORY</a></li>
@@ -89,10 +89,12 @@
 								</div>
 								
 								<div class="d-flex justify-content-center align-items-center">
+									
 									<form action="PurchaseServlet" method="POST">
 									<input type="hidden" name="vin" value="${car.vin}" > 
 									<button type="submit" name="purchase" class="btn btn-success">Purchase</button>
 									</form>	
+									
 									<div class="dropdown">
 										<a class="btn btn-secondary dropdown-toggle" href="#"
 											role="button" id="dropdownMenuLink" data-toggle="dropdown"
