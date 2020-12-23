@@ -26,11 +26,21 @@ public class Inventory {
 	
 	
 	public int discount(int price) {
-		int counter = 0;
 		double newPrice =  (price) - (price * .10);
 		price = (int)newPrice;
 		return price;
 	}
+	
+	
+	public void special(ArrayList<Car> cars) {
+		for(Car car: cars) {
+			if(car.getResidence() > 120) {
+				car.setPrice(discount(car.getPrice()));
+			}
+		}
+		
+	}
+	
 
 	
 	public void addCustomer(Customer customer) {
@@ -83,7 +93,9 @@ public void loadInventory() {
 	                	boolean purchased =Boolean.parseBoolean(fields[10]);
 	                	
 	                	carList.add(new Car(fields[0],fields[1],fields[2],fields[3],mileage,residence,fields[6],fields[7],used,price,purchased,fields[11])); //therefore we create a new car and we add it to the list of cars
-	                   
+	                	
+	                	
+	                	
 	                	lineCounter = 0;
 	                	
 	                	}
@@ -91,6 +103,7 @@ public void loadInventory() {
 	            }
 	           
 	            
+	            special(carList);
 	            
 	            opened.close();
 	        } catch (IOException e) {

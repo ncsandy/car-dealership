@@ -55,6 +55,7 @@ public class CustomerServlet extends HttpServlet {
 		customer.setFirstName(request.getParameter("firstName"));
 		customer.setLastName(request.getParameter("lastName"));
 		customer.setDate(request.getParameter("date"));
+		
 		customer.setCar((car));
 		
 		inventory.addCustomer(customer);

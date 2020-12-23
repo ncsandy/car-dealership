@@ -51,10 +51,11 @@
                     <a class="nav-link" href="dealerlogin.jsp">Dealer Log In</a>
                 </li>
             </ul>
-       <form class="d-flex" action="SearchCarsServlet" method="post">
-      <input class="form-control me-2" type="search" name="searchInput" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+     <form class="d-flex" action="SearchCarsServlet" method="post">
+					<input class="form-control me-2" type="search" name="searchInput"
+						placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
         </div>
     </nav>
 </div>

@@ -45,15 +45,12 @@ public class PurchaseServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		
 		HttpSession session = request.getSession(true);
-		Inventory inventory = new Inventory();
-		if (request.getParameter("purchase") != null) {			  
-			  //inventory.test(vin);
-		  }
+//		Inventory inventory = new Inventory();
+//		if (request.getParameter("purchase") != null) {			  
+//			  
+//		  }
 		String vin = request.getParameter("vin"); 
 		session.setAttribute("vin", vin);
-		
-		
-			
 		RequestDispatcher rs = request.getRequestDispatcher("purchase.jsp");
 		rs.forward(request, response);
 		

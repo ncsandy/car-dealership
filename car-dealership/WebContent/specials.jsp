@@ -51,10 +51,11 @@
                     <a class="nav-link" href="dealerlogin.jsp">Dealer Log In</a>
                 </li>
             </ul>
-             <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
+      <form class="d-flex" action="SearchCarsServlet" method="post">
+					<input class="form-control me-2" type="search" name="searchInput"
+						placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
         </div>
     </nav>
 </div>
@@ -86,7 +87,7 @@
    		 <a class="dropdown-item" href="#">Model: ${car.model}</a>
     <a class="dropdown-item" href="#">Year: ${car.year}</a>
  	 <a class="dropdown-item" href="#">Mileage: ${car.mileage}</a>
- 	 <a class="dropdown-item" href="#">Price: $${inventory.discount(car.price)}</a>
+ 	 <a class="dropdown-item" href="#">Price: $${car.price}</a>
   </div>
 </div>           
 </div>

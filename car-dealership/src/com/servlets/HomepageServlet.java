@@ -39,18 +39,13 @@ public class HomepageServlet extends HttpServlet {
 		
 		HttpSession session = request.getSession(true);
 
-		
 		Inventory inventory = (Inventory)session.getAttribute("inventory");
 		if(inventory == null) {
 			inventory = new Inventory(); 
 		}
 		
-		
-		
 		session.setAttribute("inventory", inventory);
-//		RequestDispatcher rs = request.getRequestDispatcher("index.jsp");
-//		rs.forward(request, response);
-		
+
 		
 	}
 
