@@ -1,7 +1,7 @@
 ##### FINAL Release #####
 
--Implemented the Add car function, so dealer/admin could add cars to the inventory
--Cleaned up some code, added some comments
+-Implemented the Add car function, so dealer/admin could add cars to the inventory.
+Cleaned up some code, added some comments
 
 ## TO DO ###
 
