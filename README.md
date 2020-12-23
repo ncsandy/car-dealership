@@ -1,10 +1,14 @@
-TODO:
-Add ability for admin to add cars to the list. Will finish soon :)
+##### FINAL Release #####
+
+-Implemented the Add car function, so dealer/admin could add cars to the inventory
+-Cleaned up some code, added some comments
+
+## TO DO ###
+
+-Fix some UI posistioning on the purchase page
 
 
-
-
-# car-dealership
+# Car Dealership Assigment Instructions
 
 Car Dealership Project- Due Dec 22
 Car Sales system is an application that computerizes the conventional car sale procedure which we are aware of. This is a Java/HTML based application. This helps in managing data related to buyers and sellers of the cars. Business reports can also be generated and viewed.
